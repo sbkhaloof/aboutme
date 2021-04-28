@@ -47,59 +47,29 @@ else {
 alert('now lets start with second part');
 alert('there is question takes a numerical answer');
 console.log('here is question takes a numerical answer');
-
+let mynum=5;
 for (let i = 1; i <= 4; i++) {
     alert('what is my lucky number');
-    let luckynum = prompt('enter my lucky number');
-    if (luckynum > 5) { alert(luckynum + ' is too high'); }
-    else if (luckynum < 5) { alert(luckynum + ' is too low'); }
-    else if (luckynum === 5) { alert('my lucky number is 5'); }
+    let luckynum = parseInt(prompt('please enter my luck number')); 
+    if (luckynum ===mynum) { alert( ' correct'); }
+    else if (luckynum < mynum) { alert(luckynum + ' is too low'); }
+    else if (luckynum > mynum) { alert(luckynum + ' is too high'); }
 } console.log('my lucky number is 5');
 alert('ok what is about bad number for me , lets start');
+let mynum2=13;
 for (let i = 1; i <= 4; i++) {
     alert('what is my bad number');
-    let badnum = prompt('enter my bad number');
-    if (badnum > 13) { alert(badnum + ' is too high'); }
-    else if (badnum < 13) { alert(badnum + ' is too low'); }
-    else if (badnum === 13) { alert('my bad number is 13'); }
+    let badnum =parseInt( prompt('enter my bad number'));
+    if (badnum > mynum2) { alert(badnum + ' is too high'); }
+    else if (badnum < mynum2) { alert(badnum + ' is too low'); }
+    else if (badnum === mynum2) { alert('my bad number is 13'); }
 } console.log('my bad number is 13');
-// for (let i = 1; i <= 4; i++) {
-//     alert('what is the month which i was born in?');
-//     let bornmon = prompt('enter my month as number');
-//     if (bornmon > 11) { console.log(bornmon + ' is too high'); }
-//     else if (bornmon < 3) { console.log(bornmon + ' is too low'); }
-//     else if (bornmon === 5) { console.log(' i born in may'); }
-// } console.log(' i born in may');
-// for (let i = 1; i <= 4; i++) {
-//     alert('what is the day which i was born in?');
-//     let bornday = prompt('enter my day as number');
-//     if (bornday > 18) { console.log(bornday + ' is too high'); }
-//     else if (bornday < 3) { console.log(bornday + ' is too low'); }
-//     else if (bornday === 16) { console.log(' 16 is my born day'); }
-// } console.log(' 16 is my born day')
-// alert('i will ask about my family now');
-// for (let i = 1; i <= 4; i++) {
-//     alert('how many my brothers?');
-//     let bronum = prompt('enter my brothers number');
-//     if (bronum > 6) { console.log(bronum + ' is too high'); }
-//     else if (bronum < 1) { console.log(bronum + ' is too low'); }
-//     else if (bronum === 2) { console.log(' i have two brothers'); }
-// } console.log(' i have two brothers');
-// for (let i = 1; i <= 4; i++) {
-//     alert('how many my sisters?');
-//     let sisnum = prompt('enter my sisters number');
-//     if (sisnum > 6) { console.log(sisnum + ' is too high'); }
-//     else if (sisnum < 1) { console.log(sisnum + ' is too low'); }
-//     else if (sisnum === 2) { console.log(' i have two sisters'); }
-// }
-// console.log(' i have two sisters');
 alert('this is thired part of our game');
 alert('please guess the answer to have good score');
 let letters = ['a', 'g', 's', 'r', 'b', 'm', 'd'];
-
 let flag = false;
 let score = 0;
-for (let i = 0; i < letters.length; i++) {
+for (let attemp=1; attemp < 6; attemp++) {
     let useans = prompt('what is my fav letter').toLowerCase();
     let x= letters.indexOf(useans)
         if (x> -1) {
@@ -108,6 +78,21 @@ for (let i = 0; i < letters.length; i++) {
     }
 }
 alert('the correct answer must be one of a, g,s,r,b,m,d');
+console.log('your score is ' + score + ' /7');
+alert('your score is ' + score + '/7');
+alert('the second question for this part');
+let numbers = [7,3,6,10,12];
+let flag1 = false;
+let score1 = 0;
+for (let attemp=1; attemp < 6; attemp++) {
+    let useans1 = parseInt(prompt('please guss the number'));
+    let y= numbers.indexOf(useans1)
+        if (y> -1) {
+        flag1= true;
+        score1++;
+    }
+}
+alert('the correct answer must be one of 7,3,6,10,12');
 console.log('your score is ' + score + ' /7');
 alert('your score is ' + score + '/7');
 

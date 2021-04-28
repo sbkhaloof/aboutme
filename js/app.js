@@ -7,6 +7,7 @@ let familyname = prompt('please enter your family name ');
 console.log('welcome ' + name + ' ' + familyname);
 alert(' here are group of yes or no questions game');
 alert('lets start the game')
+function question1(){
 alert('are you new graduatied person?')
 let answ1 = prompt('enter your answer ').toLowerCase();
 if (answ1 === 'yes' || answ1 === 'y') {
@@ -43,10 +44,13 @@ else {
         else { alert('try to sign up and have a account'); console.log('try to sign up and have a account'); }
     }
     { console.log('try think in your future') }
-}
+};}
+question1();
+
 alert('now lets start with second part');
 alert('there is question takes a numerical answer');
 console.log('here is question takes a numerical answer');
+function question2 (){
 let mynum=5;
 for (let i = 1; i <= 4; i++) {
     alert('what is my lucky number');
@@ -55,7 +59,11 @@ for (let i = 1; i <= 4; i++) {
     else if (luckynum < mynum) { alert(luckynum + ' is too low'); }
     else if (luckynum > mynum) { alert(luckynum + ' is too high'); }
 } console.log('my lucky number is 5');
+};
+question2();
+
 alert('ok what is about bad number for me , lets start');
+function question3(){
 let mynum2=13;
 for (let i = 1; i <= 4; i++) {
     alert('what is my bad number');
@@ -64,8 +72,11 @@ for (let i = 1; i <= 4; i++) {
     else if (badnum < mynum2) { alert(badnum + ' is too low'); }
     else if (badnum === mynum2) { alert('my bad number is 13'); }
 } console.log('my bad number is 13');
+};
+question3();
 alert('this is thired part of our game');
 alert('please guess the answer to have good score');
+function question4(){
 let letters = ['a', 'g', 's', 'r', 'b', 'm', 'd'];
 let flag = false;
 let score = 0;
@@ -80,7 +91,10 @@ for (let attemp=1; attemp < 6; attemp++) {
 alert('the correct answer must be one of a, g,s,r,b,m,d');
 console.log('your score is ' + score + ' /7');
 alert('your score is ' + score + '/7');
+};
+question4();
 alert('the second question for this part');
+function question5(){
 let numbers = [7,3,6,10,12];
 let flag1 = false;
 let score1 = 0;
@@ -93,8 +107,9 @@ for (let attemp=1; attemp < 6; attemp++) {
     }
 }
 alert('the correct answer must be one of 7,3,6,10,12');
-console.log('your score is ' + score + ' /7');
-alert('your score is ' + score + '/7');
-
+console.log('your score is ' + score1 + ' /7');
+alert('your score is ' + score1 + '/7');
+};
+question5();
 alert('thank you ' + name);
 alert('thank you for your visit');

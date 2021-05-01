@@ -1,6 +1,10 @@
-h1{text-align:center;color: black;background-color: aquamarine;}
-ul li{display: inlineblock;color:green ;background-color: honeydew;direction: none;}
-img{display:block;
-margin: 0 auto;
-width: 300px;
-height: 300px;}
+h1{text-align:center;color: black;background-color: deepskyblue; font-family:'Indie Flower', cursive;font-weight: bold;text-transform:capitalize}
+ul li{display: inlineblock;color: darkturquoise ;}
+a:link{ color: rgb(28, 180, 226);text-decoration: none;}
+a:visited{color:;}
+P{font-family:'Girassol', Karantina;font-size: larger;}
+img{display:block; margin:0 auto;width: 500px;height: 300px;}
+body{background-color: darkcyan;}
+#intro{font-family:'Indie Flower',cursive;;font-size: larger;font-style: oblique;text-align: justify;}
+#intro2{font-family:'Indie Flower', cursive;;font-size: larger;font-style: normal;text-align: justify;}
+ol li{color: black;text-transform: lowercase;}

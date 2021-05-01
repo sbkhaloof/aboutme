@@ -93,8 +93,8 @@ for (let attemp=1; attemp < 6; attemp++) {
     }
 }
 alert('the correct answer must be one of 7,3,6,10,12');
-console.log('your score is ' + score + ' /7');
-alert('your score is ' + score + '/7');
+console.log('your score is ' + score1 + ' /7');
+alert('your score is ' + score1 + '/7');
 
 alert('thank you ' + name);
 alert('thank you for your visit');
